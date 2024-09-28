@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.hero-section {
+  padding: 20px;
+  text-align: left;
+}
+.table-section {
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #766b6b;
+  padding: 8px;
+  text-align: center;
+}
+thead {
+  background-color: #ddd;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+
+  bottom: 0;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+/* Button styling */
+.button {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for tablets and mobile phones */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .login-form {
+    display: none; /* Hide the login form initially */
+  }
+
+  /* Optional: You can toggle this with JavaScript for mobile */
+}
+
+/* Media query for larger screens (desktops) */
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none; /* Hide the menu icon on desktop */
+  }
+
+  .login-form {
+    display: block; /* Show the login form on desktop */
+  }
+}
